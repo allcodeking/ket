@@ -1,0 +1,86 @@
+/* Navbar wrapper */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(48, 186, 250, 0.199);
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #6cf;
+}
+
+.logo {
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  align-items: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1.6rem;
+  gap: 10px;
+  display: flex; 
+}
+
+.logo-img {
+  width: 40px;   /* ukuran gambar */
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50px; /* opsional */
+  border: 2px solid #ffffff;
+  box-shadow: 1px 2px #000000;
+}
+
+
+/* Links default (desktop) */
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  transition: 0.2s;
+  font-weight: 400;
+}
+
+.links a:hover {
+  color: #6cf;
+  text-shadow: 0 0 10px #6cf;
+}
+
+/* Tombol hamburger, default hidden */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+  text-shadow: 2px 1px #000000;
+  user-select: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Muncul hanya di mobile */
+  }
+
+  .links {
+    display: none; /* Sembunyi default di mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(48, 186, 250, 0.817);
+    border: 2px solid #6cf;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 2px 2px 0 #000;
+  }
+
+  .links.open {
+    display: flex; /* Muncul saat hamburger di klik */
+  }
+}

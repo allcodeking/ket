@@ -1,0 +1,29 @@
+/* scrollbar dark */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6cf;
+  border-radius: 4px;
+}
+
+body {
+  font-family: 'Luckiest Guy', sans-serif;
+}
+
+/* ==================== Global Responsive ==================== */
+@media (max-width: 768px) {
+  body {
+    max-width: 100%;
+    margin: 0 auto; /* rata tengah */
+  }
+
+  h1, h2, h3, p {
+    text-align: center; /* biar teks default center di HP */
+  }
+}

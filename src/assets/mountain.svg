@@ -1,0 +1,10 @@
+<svg width="100%" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lapisan belakang -->
+  <polygon points="0,200 120,140 250,180 400,120 550,160 700,130 800,200 0,200" fill="#a0d8f1" />
+  
+  <!-- Lapisan tengah -->
+  <polygon points="0,200 100,160 230,200 380,140 520,180 680,150 800,200 0,200" fill="#4fc3f7" />
+  
+  <!-- Lapisan depan -->
+  <polygon points="0,200 140,180 270,200 420,160 560,190 720,170 800,200 0,200" fill="#29b6f6" />
+</svg>

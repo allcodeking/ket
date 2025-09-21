@@ -1,0 +1,81 @@
+/* MemeGallery.css */
+
+.meme-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+/* Baris gambar */
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+/* Gaya gambar */
+.row img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #1199bb; /* cartoon outline */
+  border-radius: 16px;
+  box-shadow: 3px 3px 0 #000;
+  transition: transform 0.3s;
+}
+
+.row img:hover {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+/* Scroll animations */
+@keyframes scroll-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.scroll-right {
+  animation: scroll-right 50s linear infinite;
+}
+
+.scroll-left {
+  animation: scroll-left 50s linear infinite;
+}
+
+/* Desktop: 2 baris */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Responsive: HP / max 768px -> 4 baris */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .row {
+    gap: 0.4rem;
+    justify-content: center;
+  }
+
+  .row img {
+    width: 90px;
+    height: 90px;
+  }
+}

@@ -1,0 +1,399 @@
+/*app.css
+
+/* ==================== Reset & Font ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Luckiest Guy', cursive;
+  background: #a0d8f1;
+  /* overall background */
+  color: #000;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.mountain-bg {
+  margin-top: -400px;
+  width: 150%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  /* center horizontally */
+  position: relative;
+  margin-bottom: 4px;
+  /* menempel ke footer */
+}
+
+.mountain-bg img {
+  width: auto;
+  /* biar proporsional */
+  min-width: 110%;
+  /* pastikan menutupi lebar layar */
+  display: block;
+}
+
+
+
+/* ==================== Hero Section ==================== */
+.hero-section {
+  text-align: center;
+  padding: 5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 6px 6px #000;
+  background: repeating-radial-gradient(circle, rgba(255, 255, 255, 0.15) 0px, rgba(255, 255, 255, 0.15) 5px, transparent 5px, transparent 10px);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+
+
+.hero-section .lg {
+  width: 500px;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #ff6a00;
+  text-shadow: 2px 2px #000000;
+  position: relative;
+  z-index: 1;
+}
+
+/* ==================== Contract Box ==================== */
+.contract-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: #7edcf0;
+  border: 3px solid #1199bb;
+  border-radius: 16px;
+  padding: 0.7rem 3rem;
+  margin: 1.5rem 0;
+  box-shadow: 3px 3px 0 #000;
+  position: relative;
+  z-index: 1;
+}
+
+.contract-box span {
+  font-family: monospace;
+  color: #000;
+  font-weight: bold;
+}
+
+.contract-box button {
+  background: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 2px 2px 0 #000;
+  transition: 0.2s;
+}
+
+.contract-box button:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* ==================== CTA Buttons ==================== */
+.cta-buttons button {
+  background: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem 1.8rem;
+  margin: 0.8rem;
+  font-weight: bold;
+  box-shadow: 3px 3px 0 #000;
+  transition: 0.2s;
+}
+
+.cta-buttons button:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* ==================== Section Boxes (Uniform + Pemanis) ==================== */
+.about-section,
+.tokenomics-section,
+.roadmap-section,
+.community-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0 #000;
+  border: 3px solid #1199bb;
+  color: #000000;
+  background: repeating-radial-gradient(circle, rgba(255, 255, 255, 0.2) 0px, rgba(255, 255, 255, 0.2) 6px, transparent 6px, transparent 12px);
+  position: relative;
+  z-index: 1;
+}
+
+/* Decorative Background behind sections */
+.about-section::before,
+.tokenomics-section::before,
+.roadmap-section::before,
+.community-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/clouds.png');
+  /* pola awan/pastel */
+  opacity: 0.1;
+  z-index: 0;
+  border-radius: 20px;
+}
+
+/* Heading & Text */
+.about-section h2,
+.tokenomics-section h2,
+.roadmap-section h2,
+.community-section h2,
+.gallery-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ff6a00;
+  text-shadow: 2px 2px #000000;
+}
+
+.about-section p,
+.tokenomics-section p,
+.roadmap-section p,
+.community-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* ==================== Meme Gallery ==================== */
+/* ==================== Meme Gallery Section ==================== */
+.gallery-section {
+  position: relative;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin: 3rem auto;
+}
+
+.gallery-section::before,
+.gallery-section::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background: #1199bb;
+  /* garis atas & bawah */
+  width: 100%;
+  margin: 30px auto;
+  border-radius: 1px;
+}
+
+.gallery-section::after {
+  margin-top: 2rem;
+}
+
+.gallery-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* ==================== Footer ==================== */
+.footer-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 0.9rem;
+  background: #a0d8f1;
+  color: #000;
+  border-top: 4px solid #1199bb;
+  box-shadow: 0 -4px #000;
+  border-radius: 15px 15px 0 0;
+}
+
+.community-buttons {
+  display: flex;
+  flex-direction: row;
+  /* sejajar ke samping */
+  gap: 2rem;
+  /* jarak antar tombol */
+  justify-content: left;
+  /* posisi tengah horizontal */
+  flex-wrap: wrap;
+  /* jika layar kecil, tombol bisa wrap */
+}
+
+.community-buttons button {
+  background: #ff6a00;
+  /* warna tombol */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  box-shadow: 3px 3px 0 #000;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.community-buttons button:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.community-section p {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.toast-notif {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #1199bb;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 2px 2px 0 #000;
+  z-index: 999;
+  animation: fadeinout 2s forwards;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    padding: 5rem 2rem;
+    box-shadow: none;
+    background: repeating-radial-gradient(circle, rgba(255, 255, 255, 0.15) 0px, rgba(255, 255, 255, 0.15) 5px, transparent 5px, transparent 10px);
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  .logo-img {
+    width: 40px;
+    /* ukuran gambar */
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+    /* opsional */
+    border: 2px solid #ffffff;
+    box-shadow: 1px 2px #000000;
+  }
+
+  .hero-section .lg {
+    width: 300px;
+    height: auto;
+  }
+
+  .hero-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .contract-box {
+    flex-direction: row;
+    gap: 10px;
+    padding: 0.3rem 1rem;
+    max-width: 95%;
+    /* batasi lebar box */
+    overflow: hidden;
+    /* sembunyikan sisa yang melebihi */
+  }
+
+  .contract-box span {
+    white-space: nowrap;
+    /* jangan break ke baris baru */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* tampilkan "..." jika kepanjangan */
+    font-size: 0.85rem;
+    /* sedikit lebih kecil agar muat */
+    flex: 1;
+    /* span ambil sisa ruang box */
+  }
+
+  .contract-box button {
+    flex-shrink: 0;
+    /* tombol tidak mengecil */
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .cta-buttons button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* Section Boxes */
+  .about-section,
+  .tokenomics-section,
+  .roadmap-section,
+  .community-section {
+    max-width: 85%;
+    padding: 1.8rem 1rem;
+  }
+
+  /* Community Buttons */
+  .community-buttons {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .community-buttons button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .footer-section {
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* Mountain Background */
+  .mountain-bg {
+    margin-top: -200px;
+    width: 200%;
+  }
+}
