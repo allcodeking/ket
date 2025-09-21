@@ -116,10 +116,10 @@ const App: React.FC = () => {
         <h2>Join the Cult</h2>
         <p>Become part of the chaos! Follow us and join our meme-powered cat cult:</p>
         <div className="community-buttons">
-          <a href="https://t.me/ketonsui" target="_blank" rel="noreferrer">
+          <a href="https://t.me/ketonsui" target="_blank">
             <button>Telegram</button>
           </a>
-          <a href="https://twitter.com/ketonsui" target="_blank" rel="noreferrer">
+          <a href="https://twitter.com/ketonsui" target="_blank">
             <button>Twitter</button>
           </a>
         </div>
