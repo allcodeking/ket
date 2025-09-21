@@ -6,6 +6,7 @@ import "./components/Navbar.css";
 import "./components/MemeGallery.css";
 
 import logo from "./assets/k.png"; // logo utama
+import Mountains from "./assets/mountain.svg"; // background gunung
 
 const contractAddress = "0x000000000000000000000000000000000000000000000000000000000000000::ket::KET";
 
@@ -123,6 +124,11 @@ const App: React.FC = () => {
           </a>
         </div>
       </section>
+
+      {/* Gunung di atas Footer */}
+      <div className="mountain-bg">
+        <img src={Mountains} alt="Gunung" />
+      </div>
 
       {/* Footer */}
       <footer className="footer-section">
