@@ -125,11 +125,6 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Gunung di atas Footer */}
-      <div className="mountain-bg">
-        <img src={Mountains} alt="Gunung" />
-      </div>
-
       {/* Footer */}
       <footer className="footer-section">
         <p>© 2025 KET. Powered by memes, fueled by chaos.</p>
