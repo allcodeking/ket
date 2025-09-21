@@ -8,7 +8,7 @@ import "./components/MemeGallery.css";
 import logo from "./assets/k.png"; // logo utama
 import Mountains from "./assets/mountain.svg"; // background gunung
 
-const contractAddress = "0x000000000000000000000000000000000000000000000000000000000000000::ket::KET";
+const contractAddress = "0x3aa9200051cb6e45eed1724d60c5279c5b8d8efd625086326138e8eb989b8380::ket::KET";
 
 const App: React.FC = () => {
   const [toast, setToast] = useState(""); // toast notif
@@ -65,10 +65,10 @@ const App: React.FC = () => {
 
         {/* CTA Buttons */}
         <div className="cta-buttons">
-          <a href="https://blast.fun/" target="_blank" rel="noreferrer">
+          <a href="https://blast.fun/token/0x3aa9200051cb6e45eed1724d60c5279c5b8d8efd625086326138e8eb989b8380::ket::KET" target="_blank" rel="noreferrer">
             <button>Buy on Blast.fun</button>
           </a>
-          <a href="https://dexscreener.com/" target="_blank" rel="noreferrer">
+          <a href="https://blast.fun/token/0x3aa9200051cb6e45eed1724d60c5279c5b8d8efd625086326138e8eb989b8380::ket::KET" target="_blank" rel="noreferrer">
             <button>View Chart</button>
           </a>
           <a href="https://t.me/ketonsui" target="_blank" rel="noreferrer">
