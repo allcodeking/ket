@@ -17,7 +17,6 @@ body {
 }
 
 .mountain-bg {
-  margin-top: -400px;
   width: 150%;
   overflow: hidden;
   display: flex;
@@ -25,7 +24,9 @@ body {
   /* center horizontally */
   position: relative;
   margin-bottom: 4px;
+  pointer-events:none;
   /* menempel ke footer */
+  z-index: 0;
 }
 
 .mountain-bg img {
